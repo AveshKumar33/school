@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  padding: 10px 0px 0px 20px;
+}
+
+.textField {
+  width: 100%;
+}
+
+.submit-button button {
+  /* padding: 10px 20px; */
+  /* margin: 10px 0px; */
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-button button:active {
+  scale: 0.9;
+}
+
+.submit-button button:hover {
+  background-color: #169c96;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  scale: 0.9;
+}
+
+.cancle-button {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background-color: #f09064;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.cancle-button:active {
+  scale: 0.9;
+}

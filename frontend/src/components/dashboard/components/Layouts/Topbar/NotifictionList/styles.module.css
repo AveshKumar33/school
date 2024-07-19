@@ -1,0 +1,62 @@
+.root {
+  width: 350px;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.header {
+  background-image: url(../../../../assets/world.jpg);
+  background-position-x: right;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 34px;
+}
+
+.listItem {
+  cursor: pointer;
+}
+
+.listItem:hover {
+  background-color: #f8fafc;
+}
+
+.listItemIcon {
+  background-color: rgba(0 0 0 0.03);
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 2px;
+}
+
+.listItemTextSecondary {
+  margin-top: 4px;
+  color: #66788a;
+}
+
+.arrowForward {
+  color: #66788a;
+  height: 16px;
+  width: 16px;
+}
+
+.footer {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.empty {
+  text-align: center;
+  padding: 3px;
+}
+.emptyImageWrapper {
+  margin-bottom: 3px;
+}
+.emptyImage {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}

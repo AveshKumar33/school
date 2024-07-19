@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  padding: 10px 0px 0px 20px;
+}
+
+.textField {
+  width: 100%;
+}
+
+.typography {
+  display: flex;
+  align-items: center;
+}
+
+.form-container {
+  margin: 75px 10px 10px 10px;
+}
+
+.modal-form-container {
+  margin: 3px;
+}
+
+.form-container label {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.form-control {
+  display: block;
+  padding: 7px 5px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid #b7c4cf;
+  border-radius: 5px;
+  text-align: left;
+  color: #809db5;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #3a546a;
+  border-radius: 2px;
+}
+
+.submit-btn button {
+  padding: 8px 20px;
+  margin: 0px 0px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-button button:active {
+  scale: 0.9;
+}
+
+.cancle-button button {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background-color: #f09064;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.cancle-button button:active {
+  scale: 0.9;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-button:active {
+  scale: 0.9;
+}
+
+.cancle-button {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background-color: #f09064;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.cancle-button:active {
+  scale: 0.9;
+}

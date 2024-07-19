@@ -1,0 +1,55 @@
+.container {
+  align-items: center;
+  /* padding: 30px; */
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heading {
+  text-align: center;
+  grid-column: 1/-1;
+}
+
+.Image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.title {
+  font-weight: bold;
+}
+.subtitle {
+  color: #a0a0a0;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px 0px 10px 0px;
+}
+
+.fields .textField {
+  margin: 5px 0px;
+}
+
+.signInButton {
+  width: 90%;
+}
+
+.forgetPassword {
+  color: #0767db;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.forgetPassword:hover {
+  color: #0b48a0;
+  text-decoration: underline;
+}

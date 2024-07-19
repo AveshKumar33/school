@@ -1,0 +1,30 @@
+.content {
+  align-items: center;
+  display: flex;
+}
+.title {
+  font-weight: 700;
+}
+.iconWrapper {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 4rem;
+  justify-content: center;
+  margin-left: auto;
+  width: 4rem;
+}
+.icon {
+  font-size: 20rem;
+  height: 30rem;
+  width: 30rem;
+}
+.footer {
+  display: flex;
+  align-items: center;
+}
+.difference {
+  align-items: center;
+  display: inline-flex;
+  font-weight: 700;
+}

@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  padding: 10px 0px 0px 20px;
+}
+
+.textField {
+  width: 100%;
+}
+
+.typography {
+  display: flex;
+  align-items: center;
+}
+
+.dateInp {
+  padding-top: 3px !important;
+  min-width: 100% !important;
+}
+
+.list-item {
+  flex: 0 1 auto !important;
+  -webkit-flex: 0 1 auto !important;
+  flex-grow: 0 !important;
+  cursor: pointer;
+}
+
+.bold-cell {
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  scale: 0.9;
+}
+
+.cancle-button {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background-color: #f09064;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.cancle-button:active {
+  scale: 0.9;
+}
+
+.pdf,
+.excel {
+  display: inline-block;
+  padding: 7px 7px 3px 7px;
+  margin: auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf {
+  margin-right: 3px;
+  background-color: #f1b1b1;
+}
+
+.pdf:hover {
+  background-color: #f79292;
+  transition: all 0.3ms ease-in-out;
+}
+
+.excel {
+  background-color: #9bf09b;
+}
+
+.excel:hover {
+  background-color: #5af35a;
+  transition: all 0.3ms ease-in-out;
+}

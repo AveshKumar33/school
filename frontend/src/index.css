@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+    url("./util/font/Inter/Inter-VariableFont_slnt\,wght.ttf"),
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./util/font/Roboto/Roboto-Regular.ttf"),
+    format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Inter";
+}
+
+* {
+  font-family: "Inter";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Style for the custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

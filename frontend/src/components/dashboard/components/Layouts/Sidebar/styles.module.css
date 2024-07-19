@@ -1,0 +1,87 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.masterItem {
+  padding: 0px 10px 0px 0px !important;
+}
+
+.transportItem {
+  padding: 0px 33px 0px 0px !important;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  flex-shrink: 0;
+}
+.logoLink {
+  margin-top: 5px;
+  font-size: 0;
+}
+.logoImage {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.logoDivider {
+  margin-bottom: 5px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.nameText {
+  margin-top: 5px;
+}
+.profileDivider {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.listSubheader {
+  color: #66788a;
+}
+
+.listItem {
+  border-left: 2px solid #fff !important;
+  margin: 0 !important;
+}
+
+.listItemText {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.listItem:hover {
+  background-color: #f6f9fd;
+  border-left-color: #0767db !important;
+  border-radius: 4px !important;
+}
+
+.listItem:hover .listItemIcon {
+  color: #0767db;
+  /* margin-left: -4px;s */
+}
+
+.activeListItem {
+  color: #0767db;
+}
+
+.acrItem:hover {
+  background-color: #ececec3f;
+}

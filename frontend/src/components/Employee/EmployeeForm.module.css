@@ -1,0 +1,232 @@
+.main-container {
+  width: 100%;
+  padding: 20px 0px 0px 20px;
+}
+
+.textField {
+  width: 100%;
+}
+
+.personal-info-contnr,
+.academic-info-contnr {
+  padding: 20px 100px 0px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+}
+
+.academic-info-contnr h3 {
+  grid-column: 1 / -1;
+}
+
+.p-info-salutation {
+  grid-column: 1 / 2;
+}
+
+.p-info > input[type="text"],
+.p-info > input[type="email"],
+.p-info > input[type="password"],
+.p-info > input[type="date"],
+.p-info > input[type="number"],
+.p-info > input[type="tel"],
+.p-info > input[type="datetime-local"],
+textarea {
+  width: 100%;
+  margin: 5px 0 22px 0;
+  padding: 7px 5px;
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid #b7c4cf;
+  /* border-radius: 5px; */
+  text-align: left;
+  color: #809db5;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 5px 0 22px 0;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #b7c4cf;
+  border-radius: 2px;
+  color: #809db5;
+}
+
+.p-info-select {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+}
+
+@media (max-width: 393px) {
+  .p-info-select {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .p-info-bottom {
+    margin-top: 20px;
+  }
+}
+
+.p-info > input[type="text"]:focus,
+.p-info > input[type="password"]:focus,
+.p-info > input[type="email"]:focus,
+.p-info > input[type="date"]:focus,
+.p-info > input[type="number"]:focus,
+.p-info > input[type="tel"]:focus,
+.p-info > input[type="datetime-local"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #3a546a;
+  /* border-radius: 5px; */
+}
+
+/*file upload start*/
+
+.file-upload-contnr {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  padding: 20px 100px 0px 100px;
+  grid-column-gap: 30px;
+}
+
+@media (max-width: 393px) {
+  .p-info-select {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .p-info-bottom {
+    margin-top: 20px;
+  }
+}
+
+.address-sec-contnr {
+  display: grid;
+  padding: 0px 100px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+  /* grid-row-gap: 10px; */
+}
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-row: 1/2;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  grid-column-gap: 30px;
+}
+
+.addL1 {
+  grid-column: 1 / 2;
+}
+
+.addL2 {
+  grid-column: 2 / 3;
+}
+
+.submit-button {
+  text-align: center;
+}
+
+.submit-button button {
+  padding: 5px 20px;
+  margin: 20px 0px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-button button:active {
+  scale: 0.9;
+}
+
+.submit-button button:hover {
+  background-color: #20b2aa;
+  opacity: 0.9;
+}
+
+/* ---------------------------------- upload file css start -------------------------------------- */
+
+.container {
+  height: 260px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5px;
+  background-color: rgba(0, 110, 255, 0.041);
+}
+
+.header {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed royalblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.header svg {
+  height: 100px;
+}
+
+.header p {
+  text-align: center;
+  color: black;
+}
+
+.footer {
+  background-color: rgba(0, 110, 255, 0.075);
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  border: none;
+}
+
+.footer svg {
+  height: 130%;
+  fill: royalblue;
+  background-color: rgba(70, 66, 66, 0.103);
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+}
+
+.file {
+  display: none;
+}
+
+/* ---------------------------------- upload file css end -------------------------------------- */

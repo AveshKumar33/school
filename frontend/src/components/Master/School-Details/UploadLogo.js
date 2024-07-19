@@ -1,0 +1,144 @@
+import React, { useState, useEffect } from "react";
+import { toast } from "react-toastify";
+
+import { REACT_APP_FileURL } from "../../../util/axios/config";
+import UploadIcon from "../../../assets/UploadIcon";
+import styles from "./styles.module.css";
+
+function removeItems(arr, item) {
+  for (var i = 0; i < item; i++) {
+    arr.pop();
+  }
+}
+
+function useFiles({ initialState = [], maxFiles = 1 }) {
+  const [state, setstate] = useState(initialState);
+
+  function withBlobs(files) {
+    const destructured = [...files];
+
+    if (destructured.length > maxFiles) {
+      const difference = destructured.length - maxFiles;
+      removeItems(destructured, difference);
+    }
+
+    const blobs = destructured
+      .map((file) => {
+        if (file.type.includes("image")) {
+          file.preview = URL.createObjectURL(file);
+          return file;
+        }
+        toast.error("Only image allowed!", {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 2000,
+          hideProgressBar: true,
+          theme: "colored",
+        });
+        return null;
+      })
+      .filter((elem) => elem !== null);
+
+    setstate(blobs);
+  }
+  return [state, withBlobs];
+}
+
+// validate between image and pdf for display
+const fileExtension = (fileName) => {
+  const fileExtension = fileName?.split(".").pop().toLowerCase();
+  return ["jpg", "jpeg", "png", "gif"].includes(fileExtension);
+};
+
+// main function
+
+function UploadLogo({ onDrop, fileAccept, existingFile, field, inpId, name }) {
+  const [files, setfiles] = useFiles({});
+
+  useEffect(() => {
+    if (onDrop) {
+      onDrop(files);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [files]);
+
+  return (
+    <>
+      <div>
+        <div className={styles.container}>
+          <label
+            htmlFor={inpId}
+            onDrop={(e) => {
+              e.preventDefault();
+              e.persist();
+              setfiles(e.dataTransfer.files);
+            }}
+            onDragOver={(e) => {
+              e.preventDefault();
+            }}
+            onDragLeave={(e) => {
+              e.preventDefault();
+            }}
+            className={styles.header}
+          >
+            {existingFile && files.length === 0 && (
+              <img
+                style={{
+                  borderRadius: "50%",
+                }}
+                width="175"
+                height="175"
+                key={existingFile + "file"}
+                src={`${REACT_APP_FileURL}/file/${existingFile}`}
+                alt="your file"
+              />
+            )}
+            {files.length > 0 ? (
+              fileExtension(files[0]?.name) ? (
+                files.map((file) => (
+                  <img
+                    style={{
+                      borderRadius: "50%",
+                    }}
+                    width="175"
+                    height="175"
+                    key={file.name + "file"}
+                    src={file.preview}
+                    alt="your file"
+                  />
+                ))
+              ) : (
+                <img
+                  style={{
+                    width: "150px",
+                    height: "150px",
+                    marginTop: "10px",
+                    borderRadius: "50%",
+                  }}
+                  src="http://localhost:3000/pdf.webp"
+                  alt="your_file"
+                />
+              )
+            ) : !existingFile ? (
+              <UploadIcon />
+            ) : (
+              ""
+            )}
+          </label>
+          <input
+            style={{ display: "none" }}
+            type="file"
+            id={inpId}
+            name={name}
+            accept={fileAccept}
+            {...field}
+            onChange={(e) => {
+              setfiles(e.target.files);
+            }}
+          />
+        </div>
+      </div>
+    </>
+  );
+}
+
+export { UploadLogo };

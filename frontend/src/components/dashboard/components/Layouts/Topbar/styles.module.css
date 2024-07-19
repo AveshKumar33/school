@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  z-index: 1200;
+}
+.toolbar {
+  min-height: auto;
+  width: 100%;
+}
+.title {
+  margin-left: 3px;
+}
+.menuButton {
+  margin-left: -4px;
+}
+.notificationsButton {
+  margin-left: auto;
+}
+.signOutButton {
+  margin-left: 3px;
+}

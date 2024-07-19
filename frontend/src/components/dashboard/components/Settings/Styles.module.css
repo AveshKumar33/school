@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  padding: 10px 0px 0px 20px;
+}
+
+.items {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.textField {
+  width: 100%;
+}

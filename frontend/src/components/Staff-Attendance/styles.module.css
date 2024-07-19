@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  padding: 20px 0px 0px 20px;
+}
+
+.table th {
+  /* background-color: #4978f8;
+  color: #fff; */
+  font-weight: 500;
+  font-size: 18px;
+}

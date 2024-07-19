@@ -1,0 +1,59 @@
+.root {
+  max-height: 100%;
+  background-color: white;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.close {
+  color: #0e055e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #20b2aa;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.submit-btn:active {
+  scale: 0.9;
+}
+
+.cancle-button {
+  padding: 10px 20px;
+  margin: 0px 5px;
+  background-color: #f09064;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.cancle-button:active {
+  scale: 0.9;
+}

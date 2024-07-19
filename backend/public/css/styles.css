@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: repeating-linear-gradient(90deg, white, white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.prnt-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0px;
+  border: 0.15em solid #256a98;
+}
+
+.heading {
+  margin: 10px 0px;
+  text-align: center;
+  text-decoration: underline;
+  color: #256a98;
+}
+
+.columns {
+  /* color: #0694f3; */
+  font-weight: 600;
+}
+
+.prnt-title {
+  /* padding-left: 5px; */
+  font-size: 12px;
+  color: #256a98;
+}
+
+.caption {
+  text-align: center;
+}
+
+.print-table {
+  width: 100%;
+}
+
+.table-container {
+  margin-top: 15px;
+}
+
+.print-table,
+tr,
+td,
+th {
+  padding: 5px 0px;
+  border: 0.1em solid #256a98;
+}
+
+.table-heading {
+  text-align: center;
+}
+
+.content {
+  padding: 5px 10px;
+}
+
+.content1 {
+  width: 20%;
+  padding-left: 10px;
+}
+
+.table-heading {
+  background-color: #256a98;
+  color: #fff;
+}
+
+.content2 {
+  width: 25%;
+  padding-left: 10px;
+}
+
+@media print {
+  .print-btn {
+    display: none;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
